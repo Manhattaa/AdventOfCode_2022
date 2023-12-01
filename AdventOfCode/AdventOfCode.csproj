@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="2022\Inputs\Day1" />
+    <None Remove="2023\Inputs\Day1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="2022\Inputs\Day1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2023\Inputs\Day1">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="2015\" />
+    <Folder Include="2016\" />
+    <Folder Include="2017\" />
+    <Folder Include="2018\" />
+    <Folder Include="2019\" />
+    <Folder Include="2020\" />
+    <Folder Include="2021\" />
+    <Folder Include="2022\WIP\" />
+    <Folder Include="2023\WIP\" />
+  </ItemGroup>
+
+</Project>
